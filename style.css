@@ -376,7 +376,7 @@ iframe{
 }
 
 .contact .contact-info{
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .contact .icone-contact{
@@ -388,6 +388,7 @@ iframe{
 
 .icone-contact i{
     font-size: 18px;
+    color: rgb(250, 17, 91);
 }
 
 .contact-map .repere{
@@ -396,7 +397,7 @@ iframe{
 
 form .btn{
     height: 8vh;
-    background-color: rgb(247, 59, 17);
+    background-color: rgb(250, 17, 91);
     color: whitesmoke;
     border-radius: 50px;
 }
@@ -405,24 +406,12 @@ form .btn{
 
 
 footer{
-    background-color: black;
-}
-
-.footer-bloc .btn{
-    border-radius: 0;
+    background-color: rgb(1, 1, 48);
 }
 
 .footer-bloc h5{
     font-size: 16px;
     font-weight: bold;
-}
-
-.footer-bloc input{
-    background-color: black;
-}
-
-.subscribe{
-    font-size: 14px;
 }
 
 .footer-bloc ul li{
@@ -461,4 +450,16 @@ footer{
     align-items: center;
     justify-content: center;
     border: 1px solid white;
+}
+
+.last h5{
+    font-size: 15px !important;
+}
+
+.last h6{
+    font-size: 13px !important;
+}
+
+.last span{
+    color: rgb(250, 17, 91);
 }
