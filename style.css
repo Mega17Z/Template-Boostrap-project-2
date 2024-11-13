@@ -13,13 +13,18 @@
 .header .navbar{
     position: relative;
     height: 15vh;
+    background-color: rgba(0, 0, 32, 0.459);
 }
 
 .navbar .navbar-brand{
-    font-size: 26px;
-    text-transform: uppercase;
+    font-size: 35px;
     letter-spacing: 1px;
-    font-weight: 700;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+.navbar-brand i{
+    color: rgb(250, 17, 91);
 }
 
 .navbar .navbar-nav{
@@ -29,20 +34,20 @@
 .navbar-nav .nav-link{
     font-size: 15px;
     font-weight: 500;
-    color: rgb(78, 78, 89);
+    color: whitesmoke;
     position: relative;
 }
 
 .nav-link:hover{
-    color: rgb(247, 59, 17);
+    color: rgb(250, 17, 91) !important;
 }
 
 .navbar .btn{
     border-radius: 50px;
-    background-color: rgb(247, 59, 17);
+    background-color: rgb(250, 17, 91);
     color: white;
     font-size: 15px;
-    padding: 8px 15px;
+    padding: 6px 15px;
 }
 
 .navbar-nav .btn:hover{
@@ -54,7 +59,10 @@
 main{
     width: 100%;
     min-height: 100vh;
-    background-color: bisque;
+    background-image: url(2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     object-fit: cover;
     position: relative;
 }
@@ -64,7 +72,7 @@ main::before{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(3, 3, 100, 0.459);
+    background-color: rgba(0, 0, 42, 0.559);
 }
 
 .titre-main{
@@ -113,7 +121,7 @@ main::before{
 main .row{
     position: relative;
     z-index: 2;
-    background-color: rgba(3, 3, 100, 0.459);
+    background-color: rgba(1, 1, 48, 0.776);
 }
 
 
@@ -121,17 +129,22 @@ main .row{
 .titre h2{
     position: relative;
     width: 100%;
+    font-weight: 700;
 }
 
 .titre h2::before{
     content: "";
     position: absolute;
     width: 5rem;
-    height: 2px;
+    height: 3px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgb(247, 59, 17);
+    background-color: rgb(250, 17, 91);
     bottom: -15px;
+}
+
+.titre p{
+    font-weight: 600;
 }
 
 
@@ -141,11 +154,29 @@ main .row{
 
 .days .btn{
     width: 250px;
-    background-color: rgba(3, 3, 100, 0.459);
+    background-color: rgb(1, 1, 48);
     height: 7vh;
     border-radius: 50px;
     font-size: 20px;
+    color: whitesmoke;
+    font-weight: 600;
 }
+
+.days .active{
+    background-color: rgb(250, 17, 91) !important;
+    color: whitesmoke !important;
+    border: none !important;
+}
+
+
+.first-registre h6,.Registration{
+    font-family: "Roboto", sans-serif;
+}
+
+.Registration{
+    font-weight: 700;
+}
+
 
 .registre img{
     width: 65px;
@@ -157,12 +188,21 @@ main .row{
     opacity: 0.5;
 }
 
+
 iframe{
     left: 0;
 }
 
 .grid-map .col-md-6{
     min-height: 350px;
+}
+
+.grid-map p, .grid-map h2{
+    font-family: "Roboto", sans-serif;
+}
+
+.grid-map h2{
+    font-weight: 700;
 }
 
 .grid-map .col-md-3{
@@ -174,6 +214,8 @@ iframe{
     width: 80%;
     margin: auto;
 }
+
+
 
 .hotel .card{
     border-radius: 0;
@@ -191,8 +233,13 @@ iframe{
 
 .galery .col-md-2{
     height: 25vh;
-    /* width: 16rem; */
 }
+
+.card-text{
+    margin-top: 8px;
+    font-size: 15px;
+}
+
 
 .galery .point{
     margin: 1rem 0;
@@ -202,10 +249,18 @@ iframe{
 }
 
 .point i{
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    background-color: rgba(11, 11, 11, 0.295);
+    border: 1px solid rgb(250, 17, 91);
+}
+
+.point i:nth-child(1){
+    background-color: rgb(250, 17, 91);
+}
+
+.activer{
+    border: 5px solid rgb(250, 17, 91);
 }
 
 .other{
@@ -222,8 +277,9 @@ iframe{
 }
 
 .detail .sumary h5{
-    font-size: 22px;
-    color: rgb(247, 59, 17);
+    font-size: 17px;
+    color: rgb(1, 1, 48);
+    font-weight: 700;
 }
 
 
@@ -232,28 +288,49 @@ iframe{
 }
 
 .blocs h4{
-    font-size: 1.2rem;
-    font-weight: 500;
+    /* font-size: 1.2rem; */
+    font-weight: 700;
+}
+
+.bloc-active{
+    background-color: rgb(250, 17, 91);
+}
+
+.bloc-active .price{
+    color: rgb(1, 1, 48) !important;
+}
+
+.bloc-active .price .dollar{
+    color: rgb(1, 1, 48);
+}
+
+.bloc-active .price .price-samall{
+    color: whitesmoke;
+}
+
+.bloc-active .btn{
+    background-color: whitesmoke !important;
+    color: rgb(250, 17, 91) !important;
 }
 
 .blocs .price{
     display: flex;
     align-items: center;
     position: relative;
-    font-size: 40px;
-    color: rgb(247, 59, 17);
+    font-size: 50px;
+    color: rgb(250, 17, 91);
     letter-spacing: 2px;
 }
 
 .price .dollar{
-    font-size: 25px;
+    font-size: 30px;
     position: relative;
     top: -5px;
 }
 
 .price .price-samall{
     color: rgba(33, 33, 33, 0.669);
-    font-size: 20px;
+    font-size: 18px;
     bottom: -10px;
     position: relative;
     font-weight: 200;
@@ -287,11 +364,12 @@ iframe{
     /* border-radius: 50px; */
     font-size: 16px;
     padding: 12px 0;
-    color: rgb(247, 59, 17);
+    color: whitesmoke;
     border: 1px solid rgb(247, 59, 17);
-    /* background-color: rgb(247, 59, 17); */
+    background-color: rgb(250, 17, 91);
     font-weight: 600;
 }
+
 
 .contact .col-md-6{
     min-height: 30vh;
