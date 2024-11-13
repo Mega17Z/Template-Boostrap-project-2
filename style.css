@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", system-ui;
+}
+
+
+/* Main page */
+
+.header .navbar{
+    position: relative;
+    height: 15vh;
+}
+
+.navbar .navbar-brand{
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.navbar .navbar-nav{
+    gap: 15px;
+}
+
+.navbar-nav .nav-link{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(78, 78, 89);
+    position: relative;
+}
+
+.nav-link:hover{
+    color: rgb(247, 59, 17);
+}
+
+.navbar .btn{
+    border-radius: 50px;
+    background-color: rgb(247, 59, 17);
+    color: white;
+    font-size: 15px;
+    padding: 8px 15px;
+}
+
+.navbar-nav .btn:hover{
+    border: 1px solid rgb(206, 18, 18) !important;
+}
+
+
+/* Main */
+main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: bisque;
+    object-fit: cover;
+    position: relative;
+}
+
+main::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 3, 100, 0.459);
+}
+
+.titre-main{
+    position: relative;
+    z-index: 2;
+}
+
+.titre-main h1{
+    font-size: 3rem;
+}
+
+.titre-main span{
+    color: rgb(247, 59, 17);
+}
+
+.titre-main p{
+    font-size: 1.5rem;
+}
+
+.titre-main .icone-main{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: rgb(247, 59, 17);
+}
+
+.icone-main i{
+    font-size: 20px;
+    color: whitesmoke;
+    z-index: 2;
+}
+
+.icone-main::before{
+    content: "";
+    width: 120%;
+    height: 120%;
+    z-index: 0;
+    position: absolute;
+    background-color: rgb(247, 59, 17);
+    opacity: 0.5;
+    border-radius: 50%;
+}
+
+main .row{
+    position: relative;
+    z-index: 2;
+    background-color: rgba(3, 3, 100, 0.459);
+}
+
+
+/* titre */
+.titre h2{
+    position: relative;
+    width: 100%;
+}
+
+.titre h2::before{
+    content: "";
+    position: absolute;
+    width: 5rem;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(247, 59, 17);
+    bottom: -15px;
+}
+
+
+.speaker{
+    margin: 5rem 0;
+}
+
+.days .btn{
+    width: 250px;
+    background-color: rgba(3, 3, 100, 0.459);
+    height: 7vh;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+.registre img{
+    width: 65px;
+    height: 65px;
+}
+
+.registre-info span{
+    font-size: 15px;
+    opacity: 0.5;
+}
+
+iframe{
+    left: 0;
+}
+
+.grid-map .col-md-6{
+    min-height: 350px;
+}
+
+.grid-map .col-md-3{
+    min-height: 250px;
+}
+
+.image-content{
+    z-index: 2;
+    width: 80%;
+    margin: auto;
+}
+
+.hotel .card{
+    border-radius: 0;
+}
+
+.card img{
+    height: 45vh;
+    border-radius: 0;
+}
+
+.start img{
+    width: 15px;
+    height: 15px;
+}
+
+.galery .col-md-2{
+    height: 25vh;
+    /* width: 16rem; */
+}
+
+.galery .point{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.point i{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(11, 11, 11, 0.295);
+}
+
+.other{
+    background-color: whitesmoke;
+}
+
+.logos .col-md-3{
+    min-height: 35vh;
+    background-color: white;
+}
+
+.logos img{
+    width: 10rem;
+}
+
+.detail .sumary h5{
+    font-size: 22px;
+    color: rgb(247, 59, 17);
+}
+
+
+.blocs{
+    background-color: white;
+}
+
+.blocs h4{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.blocs .price{
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 40px;
+    color: rgb(247, 59, 17);
+    letter-spacing: 2px;
+}
+
+.price .dollar{
+    font-size: 25px;
+    position: relative;
+    top: -5px;
+}
+
+.price .price-samall{
+    color: rgba(33, 33, 33, 0.669);
+    font-size: 20px;
+    bottom: -10px;
+    position: relative;
+    font-weight: 200;
+}
+
+.blocs ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.blocs ul li{
+    margin: 7px 0;
+    opacity: 0.8;
+    font-size: 16px;
+}
+
+.blocs ul li s{
+    color: black;
+    opacity: 0.5;
+}
+
+.blocs ul li i{
+    color: rgb(0, 135, 68);
+    margin-right: 13px;
+}
+
+.blocs .btn{
+    display: block;
+    width: 100px;
+    /* width: 60%; */
+    /* border-radius: 50px; */
+    font-size: 16px;
+    padding: 12px 0;
+    color: rgb(247, 59, 17);
+    border: 1px solid rgb(247, 59, 17);
+    /* background-color: rgb(247, 59, 17); */
+    font-weight: 600;
+}
+
+.contact .col-md-6{
+    min-height: 30vh;
+}
+
+.contact .contact-info{
+    background-color: whitesmoke;
+}
+
+.contact .icone-contact{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px dotted rgb(247, 59, 17);
+}
+
+.icone-contact i{
+    font-size: 18px;
+}
+
+.contact-map .repere{
+    min-height: 60vh;
+}
+
+form .btn{
+    height: 8vh;
+    background-color: rgb(247, 59, 17);
+    color: whitesmoke;
+    border-radius: 50px;
+}
+
+
+
+
+footer{
+    background-color: black;
+}
+
+.footer-bloc .btn{
+    border-radius: 0;
+}
+
+.footer-bloc h5{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-bloc input{
+    background-color: black;
+}
+
+.subscribe{
+    font-size: 14px;
+}
+
+.footer-bloc ul li{
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.6;
+    margin: 10px 0;
+}
+
+.footer-bloc-1 h5{
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.footer-bloc-1 p{
+    font-size: 14px !important;
+}
+
+.bloc-footer{
+    display: flex;
+    gap: 15px;
+    color: white;
+}
+
+.footer-bloc .footer-sociaux{
+    display: flex;
+    gap: 10px;
+}
+
+.footer-sociaux i{
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+}
